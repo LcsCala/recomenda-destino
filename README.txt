@@ -1,0 +1,1 @@
+Fonte do arquivo de custo de vida dos países: https://www.kaggle.com/datasets/myrios/cost-of-living-index-by-country-by-number-2024
