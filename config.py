@@ -1,5 +1,16 @@
-import os
+#Configuração para conectar com postgre
+import psycopg2
 
-class Config:
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://postgres:99!21?80@localhost/country_finder')
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+coneccao = psycopg2.connect(
+    database = '',
+    user = '',
+    password = '',
+    host = '',
+    port = ''
+)
+
+#Executa meus comandos dentro dentro do postgre
+curs = coneccao.cursor()
+
+#Confirma todas as alterações feitas na transação atual do banco de dados
+coneccao.commit()
